@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div>
+        <center>
+
+            <h1 class="heading">LIVE-WEATHER</h1>
+            <p>Temprature in &#8451</p>
+
+
+            <input type="text" id="textinput" placeholder="Enter city name">
+            <h3 id="xxx"></h3>
+            <button type="button" onclick="search()">
+                Search
+            </button>
+            
+            <button type="button" onclick="reload()">
+                Clear Table
+            </button>
+            <div id="img"><img src="" id="pic" alt=""></div>
+            <div>
+                <table id="myTable" class="box">
+                    
+                    <tr>
+                        <td>Location</td>
+                        <td id="country-name"></td>
+                    </tr
+                    <tr>
+                        <td>Temprature</td>
+                        <td id="temp"></td>
+                    </tr>
+                    <tr>
+                        <td>Max. temp</td>
+                        <td id="maxTemp"></td>
+                    </tr>
+                    <tr>
+                        <td>Min. temp</td>
+                        <td id="minTemp"></td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td id="description"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Wind Speed</td>
+                        <td id="Wspeed"></td>
+                    </tr>
+                    <tr>
+                        <td>Humidity</td>
+                        <td id="humidity"></td>
+                    </tr>
+                   
+
+
+
+                </table>
+            </div>
+        </center>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
