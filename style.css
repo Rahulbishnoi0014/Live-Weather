@@ -1,0 +1,156 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("./backgorund.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* backdrop-filter: blur(2px); */
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: linear-gradient(to right, rgba(25, 57, 57, 0.584), rgba(0, 205, 171, 0.644));
+    
+    /* background-color: rgb(15, 195, 227); */
+    height: max-content;
+    width: 500px;
+   border-radius: 20px;
+    margin: 50px;
+    padding: 1rem;
+    transition: 0.3s;
+    }
+
+.card:hover{
+    transform: scale(1.01);
+    
+}
+#data{
+    background-image: url("https://cdn.pixabay.com/photo/2021/09/20/17/45/mountains-6641490_1280.png");
+    background-size: cover;
+    padding: 10px;
+    background-repeat: no-repeat;
+    height: 250px;
+
+    
+}
+.place, .humidity
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#items{
+    position: relative;
+    top: 100px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+#img{
+    height: 50px;
+}
+#temp{
+    width: max-content;
+    margin: 0%;
+    font-size: 3.5rem;
+    text-align: center;
+    color: white
+}
+#dis{
+    width: max-content;
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+}
+#bad{
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    top: 60%;
+}
+.bottom{
+    display: flex;
+    margin: 1%;
+
+    justify-content: space-evenly;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+.place ,.humidity{
+    
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+}
+
+input{
+    font-size: 1.9rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+margin-bottom: 5px;
+    border:0;
+    outline: 0;
+
+    border-bottom: 2px solid rgb(8, 25, 32);
+    padding: 5px;
+}
+.goback{
+    width:max-content;
+    font-size: 3rem;
+   
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+   border: 0px;
+   transition: 0.3s;
+
+}
+.goback:hover{
+    transform: scale(1.2);
+}
+
+.button{
+    font-size: 1.9rem;
+    background-color: rgba(0, 0, 0, 0.758);
+    color: rgb(255, 255, 255);
+    border:0;
+    border-radius: 7px;
+    padding: 5px;
+    transition: 0.3s;
+}
+.button:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px 2px white;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+
+
+a{
+    position: fixed;
+    left: 5%;
+    bottom: 90%;
+   
+    width: max-content;
+    color: rgb(6, 159, 83);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+
+}
+a:hover{
+    transform: scale(1.1);
+    color: white;
+    
+    
+
+}
