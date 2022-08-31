@@ -1,97 +1,156 @@
 body{
-    font-family: 'Quicksand', sans-serif;
-    background-color: #24c7dc7c;
+    padding: 0;
+    margin: 0;
+    background-image: url("./backgorund.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* backdrop-filter: blur(2px); */
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
 }
-.heading
-{   color:#17525a85; 
-    text-decoration: underline;
 
-    font-size: 5rem;
-    font-family: 'Playfair Display', serif;
+.card{
+    background: linear-gradient(to right, rgba(25, 57, 57, 0.584), rgba(0, 205, 171, 0.644));
+    
+    /* background-color: rgb(15, 195, 227); */
+    height: max-content;
+    width: 500px;
+   border-radius: 20px;
+    margin: 50px;
+    padding: 1rem;
+    transition: 0.3s;
+    }
 
-}
-.box{
-    font-family: 'Quicksand', sans-serif;
-    border-radius: 40px;
-    font-size: 4rem;
-    background: #3bbecf85; 
-    line-height: 85px;
-    padding: 40px;
-    color: blanchedalmond;
+.card:hover{
+    transform: scale(1.01);
     
 }
-#textinput{
-    font-family: 'Roboto', sans-serif;
-  color: #022e35;
-  font-size: 1.5rem;
-	margin: 10px;
-  padding: 10px;
-  border-radius: 0.4rem;
-  background-color: #9eced4d5;
-  border: none;
-  width: 250px;
-  display: block;
-  border: 0.3rem solid #ffffff85;
-  transition: all 0.3s;
-}
-button{
-    font-size: 1.5rem;
-    width: 250px;
-    color: rgb(187, 47, 47);
-    border:2px solid #002024;
-    border-radius: 5px;
-    background-color: #b6e2e7;
-    margin-bottom: 20px;
-}
-button:hover {
-    background-color: #62959b;
-    color: white;
-}
-
-button:active {
-  background-color: #2a4244;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-#xxx{
-    color: red;
-    font-size: 2rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-.myTag{
-    font-family: 'Playfair Display', serif;
-    background-color: #124147;
-    width: fit-content;
-    color: white;
-    position:fixed;
-    left: 85%;
-    top: 90%;
-    border-radius: 10px;
-    text-decoration: none;
+#data{
+    background-image: url("https://cdn.pixabay.com/photo/2021/09/20/17/45/mountains-6641490_1280.png");
+    background-size: cover;
     padding: 10px;
-    border-style: dashed;
+    background-repeat: no-repeat;
+    height: 250px;
+
     
 }
-.myTag:hover{
-    background-color: white;
-    color: #002024;
+.place, .humidity
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-.box:hover{
-    background: #289baa85; 
-    color: #fdf1df;
+#items{
+    position: relative;
+    top: 100px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+
 }
 
 #img{
-    size: 4rem;
-    width: fit-content;
-    transition: 1s;
+    height: 50px;
+}
+#temp{
+    width: max-content;
+    margin: 0%;
+    font-size: 3.5rem;
+    text-align: center;
+    color: white
+}
+#dis{
+    width: max-content;
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+}
+#bad{
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    top: 60%;
+}
+.bottom{
+    display: flex;
+    margin: 1%;
+
+    justify-content: space-evenly;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+.place ,.humidity{
+    
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+}
+
+input{
+    font-size: 1.9rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+margin-bottom: 5px;
+    border:0;
+    outline: 0;
+
+    border-bottom: 2px solid rgb(8, 25, 32);
+    padding: 5px;
+}
+.goback{
+    width:max-content;
+    font-size: 3rem;
+   
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+   border: 0px;
+   transition: 0.3s;
 
 }
-#img:hover{
-    /* transform: translateX(100px); */
-    transform: scale(1.5);
+.goback:hover{
+    transform: scale(1.2);
+}
 
+.button{
+    font-size: 1.9rem;
+    background-color: rgba(0, 0, 0, 0.758);
+    color: rgb(255, 255, 255);
+    border:0;
+    border-radius: 7px;
+    padding: 5px;
+    transition: 0.3s;
+}
+.button:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px 2px white;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+
+
+a{
+    position: fixed;
+    left: 5%;
+    bottom: 90%;
+   
+    width: max-content;
+    color: rgb(6, 159, 83);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+
+}
+a:hover{
+    transform: scale(1.1);
+    color: white;
+    
+    
 
 }
