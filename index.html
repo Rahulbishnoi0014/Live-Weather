@@ -1,81 +1,57 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand&display=swap"
-        rel="stylesheet">
-
-
     <link rel="stylesheet" href="./style.css">
+    
     <title>Weather</title>
 </head>
-
-<body>
-    <div>
-        <center>
-
-            <h1 class="heading">LIVE-WEATHER</h1>
-            <p>Temprature in &#8451</p>
-
-
-            <input type="text" id="textinput" placeholder="Enter city name">
-            <h3 id="xxx"></h3>
-            <button type="button" onclick="search()">
-                Search
-            </button>
-            
-            <button type="button" onclick="reload()">
-                Clear Table
-            </button>
-            <div id="img"><img src="" id="pic" alt=""></div>
-            <div>
-                <table id="myTable" class="box">
-                    
-                    <tr>
-                        <td>Location</td>
-                        <td id="country-name"></td>
-                    </tr
-                    <tr>
-                        <td>Temprature</td>
-                        <td id="temp"></td>
-                    </tr>
-                    <tr>
-                        <td>Max. temp</td>
-                        <td id="maxTemp"></td>
-                    </tr>
-                    <tr>
-                        <td>Min. temp</td>
-                        <td id="minTemp"></td>
-                    </tr>
-                    <tr>
-                        <td>Description</td>
-                        <td id="description"></td>
-                    </tr>
-
-                    <tr>
-                        <td>Wind Speed</td>
-                        <td id="Wspeed"></td>
-                    </tr>
-                    <tr>
-                        <td>Humidity</td>
-                        <td id="humidity"></td>
-                    </tr>
-                   
-
-
-
-                </table>
-            </div>
-        </center>
+<body >
+    <div class="tag">
+        <a target="_blank" href="https://rahulbishnoi0014.github.io/Rahul-bishnoi/">Rahul Bishnoi</a>
     </div>
 
-    <script src="./app.js"></script>
-</body>
+    <div class="container">
+        <!-- <h1 style="text-align:center;">
+            LIVE-WEATHER
+        </h1>
+         -->
+        
+        <div class="card">
+            <div id="top1">
+                <input type="text" id="textinput" type="text" placeholder="City name">
+            
+            <button id="btn" class="button" onclick="search()">Search</button>
+        
+            </div>
+            <div id="top2" style="display:none;">
+                <button  class="goback" onclick="goBack()"><span style='float: left;'>&#8592</span></button>
+            </div>
+            <div id="data">
+                <p id="bad">LIVE WEATHER</p>
+                
+                <div id="items">
 
+                <h1 id="temp"></h1>
+                <p id="dis"></p>
+                </div>
+            </div>
+<hr>
+            <div id="bottom" class="bottom" style="display: none;">
+                <div class="place">
+                    <h1 id="place"></h1>
+                    <img id="img" src="./weather.png" alt="img">
+
+                </div>
+                <div class="humidity"><h1 id="humidity"></h1><p>Humidity</p></div>
+            </div>
+        
+        </div>
+
+
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
 </html>
